@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>JTM MUSIC PLAYER</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="fa-solid fa-chevron-down"></i>
+            <span>Yomwe ikusewela</span>
+            <i class="fa-solid fa-ellipsis-h"></i>
+        </div> <!-- top-bar end -->
+
+        <div class="img-area">
+            <img src="" alt="">
+        </div> <!-- img-area end -->
+
+        <div class="song-details">
+            <p class="name mt-0 mb-0"></p>
+            <p class="artist mt-0 mb-0"></p>
+        </div> <!-- song-details end -->
+
+        <div class="progress-area">
+            <div class="progress-bar"></div><!-- progress-bar end -->
+            <div class="timer">
+                <span class="current">0:00</span>
+                <span class="duration">0:00</span>
+            </div> <!-- timer end -->
+            <audio id="main-audio" src=""></audio>
+        </div> <!-- progress-area end -->
+
+        <div class="controls">
+            <span class="repeat-control" hidden>repeat</span>
+            <button id="repeat-plist" title="Loop song"><i class="fa-solid fa-repeat bg-clip"></i></button>
+            
+            
+            <button id="prev"><i  class="fa-solid fa-step-backward bg-clip"></i></button>
+           
+            <div class="play-pause">
+                <i class="fa-solid fa-play bg-clip"></i>
+            </div>
+            <button id="next"><i class="fa-solid fa-step-forward bg-clip"></i></button>
+
+            <button id="more-music"><i class="fa-solid fa-list bg-clip"></i></button>
+            
+        </div>
+
+        <div class="music-list">
+            <div class="header"> 
+                <div class="_row">
+                    <i class="fa-solid fa-list"></i>
+                    <span>List ya nyimbo</span>
+                </div>
+                <button id="close"><i class="fa-solid fa-times"></i></button>
+            </div>
+            <ul>
+           
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/music-list.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+</body>
+
+</html>
